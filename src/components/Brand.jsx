@@ -5,5 +5,4 @@ const Brand  = () => {
   <Navbar.Brand href="#home">Urban Style</Navbar.Brand>
   );
 }
-
 export default Brand;
