@@ -10,7 +10,11 @@ const NavBar  = ({greeting}) => {
       <Navbar bg="light" data-bs-theme="light">
         <Container>
           <Brand />
-          <ItemListContainer/>
+          <ItemListContainer
+          item1="Home"
+          item2="Men"
+          item3="Woman"
+          />
         </Container>
         <CartWidget/>
         <samp>{greeting}</samp>

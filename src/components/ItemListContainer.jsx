@@ -1,13 +1,14 @@
 
 import Nav from 'react-bootstrap/Nav';
+import { Link } from "react-router-dom";
 
 
-const ItemListContainer  = () => {
+const ItemListContainer  = (props) => {
   return (
     <Nav className="me-auto">
-        <Nav.Link href="#home">Home</Nav.Link>
-        <Nav.Link href="#men">Men</Nav.Link>
-        <Nav.Link href="#woman">Woman</Nav.Link>
+        <Nav.Link><Link to= "/home">{props.item1}</Link></Nav.Link>
+        <Nav.Link><Link to= "/men">{props.item2}</Link></Nav.Link>
+        <Nav.Link><Link to= "/woman">{props.item3}</Link></Nav.Link>
     </Nav>
   );
 }
