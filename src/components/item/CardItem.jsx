@@ -2,20 +2,24 @@ import Card from 'react-bootstrap/Card';
 import  Image  from "./image";
 import  Description  from "./Description";
 import  Title  from "./Title";
-import  ButtonCompra  from "./ButtonCompra";
+import  ButtonAddCart  from "./ButtonAddCart";
+import  ButtonDetalles  from "./ButtonDetalles";
+import "../../css/containerCardItems.css"
 
-
+const tab = <>&nbsp;&nbsp;&nbsp;&nbsp;</>;
 const CardItem = (props) => {
   return (
-    <div className="d-flex justify-content-around">
+    <div className="CardItems">
       <Card style={{ width: '18rem' }}>
-        <Image image = {props.image}/>
+        <Image className="Img" image = {props.image}/>
         <Card.Body>
           <Title title = {props.title}/>
           <Description description = {props.description}/>
           <Description description = {"Cantidad: "+props.stock}/>
           <Description description = {"$"+props.price}/>
-          <ButtonCompra />
+          <ButtonDetalles />
+          {tab}
+          <ButtonAddCart />
         </Card.Body>
       </Card>
     </div>
